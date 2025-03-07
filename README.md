@@ -2,6 +2,16 @@
 # SipakMed-GAN-ViT
 This project focuses on generating synthetic cancer cell images using WGAN on the SipakMed dataset and addressing class imbalance with an Instruction Vision Transformer.
 
+## SipakMed Dataset
+The **SipakMed dataset** is a collection of **cell images** obtained from **Papanicolaou (Pap) smear tests**, used for detecting **cervical cancer**. It contains **5 classes** of cells:
+1. **Superficial-Intermediate (SIP)**  
+2. **Parabasal (PAB)**  
+3. **Koilocytotic (KOC)**  
+4. **Dyskeratotic (DYS)**  
+5. **Metaplastic (META)**  
+
+Each class has a limited number of images, leading to an **imbalance issue**, which is a challenge for deep learning models. In this project, I am using **WGAN** to generate synthetic cancer cell images and mitigate this imbalance using **Instruction-ViT**.
+
 ## Features
 - Fine-tuned LSUN Generator from WGAN-PyTorch
 - Synthetic image generation for cancer cells
